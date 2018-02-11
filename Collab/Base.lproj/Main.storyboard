@@ -37,6 +37,9 @@
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dcr-ng-tba"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.72509440222108845" green="0.74485320278510236" blue="0.75007931472081224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,6 +57,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="E8F-f0-m7F" id="PAU-F4-UNd"/>
+                        <outlet property="textView" destination="hIo-r7-rrW" id="zMa-O7-48A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
