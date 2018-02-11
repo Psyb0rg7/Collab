@@ -24,6 +24,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textField.resignFirstResponder()
+    }
+    
     @IBAction func enterPressed(_ sender: Any) {
         textView.text = textField.text!
     }
