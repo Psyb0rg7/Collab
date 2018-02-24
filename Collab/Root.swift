@@ -57,4 +57,15 @@ class Root: UIPageViewController, UIPageViewControllerDataSource {
         
         return viewControllerList[nextIndex]
     }
+    
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return viewControllerList.count
+    }
+    
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        guard let firstViewController = viewControllers?.first, let firstViewControllerIndex = viewControllerList.index(of: firstViewController) else {
+            return 0
+        }
+        return firstViewControllerIndex
+    }
 }

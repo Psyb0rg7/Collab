@@ -84,7 +84,7 @@
         <!--Root-->
         <scene sceneID="Y3r-UQ-Tes">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Mgr-lj-uXr" customClass="Root" customModule="Collab" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Mgr-lj-uXr" customClass="Root" customModule="Collab" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzV-Mb-6pn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="759" y="134"/>
