@@ -16,7 +16,7 @@ class NotificationController: UIViewController {
         content.title = "This is a notification title"
         content.subtitle = "And this is the subtitle"
         content.body = "Don't forget about the body!"
-        content.badge = 1
+        content.badge = 1274
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
         
