@@ -21,6 +21,11 @@ class AddEntryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "DataEntry")
+        self.present(dataEntryViewController, animated: true, completion: nil)
+    } 
 
     /*
     // MARK: - Navigation
