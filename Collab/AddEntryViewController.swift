@@ -10,12 +10,14 @@ import UIKit
 
 class AddEntryViewController: UIViewController {
     
-    @IBAction func clearData(_ sender: Any) {
+    @IBAction func btnClearData(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "FavoriteColor")
     }
     
     @IBAction func btnFeeding(_ sender: Any) {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let feedingViewController = storyboard.instantiateViewController(withIdentifier: "Feeding")
+        self.present(feedingViewController, animated: true, completion: nil)
     }
     @IBAction func btnDiaper(_ sender: Any) {
         
@@ -41,11 +43,10 @@ class AddEntryViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        guard let x = UserDefaults.standard.object(forKey: "FavoriteColor") else {
+        if UserDefaults.standard.object(forKey: "FavoriteColor") == nil {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "DataEntry")
             self.present(dataEntryViewController, animated: true, completion: nil)
-            return
         }
         
     }

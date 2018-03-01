@@ -6,99 +6,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="TextVC" id="BYZ-38-t0r" customClass="ViewController" customModule="Collab" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E8F-f0-m7F">
-                                <rect key="frame" x="16" y="195" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hIo-r7-rrW">
-                                <rect key="frame" x="16" y="312" width="343" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQW-fF-vGd">
-                                <rect key="frame" x="16" y="256" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Enter">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dcr-ng-tba"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.72509440222108845" green="0.74485320278510236" blue="0.75007931472081224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="E8F-f0-m7F" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BkE-lQ-6sH"/>
-                            <constraint firstItem="E8F-f0-m7F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Hjh-we-jO7"/>
-                            <constraint firstItem="E8F-f0-m7F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="OT9-My-UOm"/>
-                            <constraint firstItem="E8F-f0-m7F" firstAttribute="trailing" secondItem="lQW-fF-vGd" secondAttribute="trailing" id="Qv3-Gq-oat"/>
-                            <constraint firstItem="lQW-fF-vGd" firstAttribute="top" secondItem="E8F-f0-m7F" secondAttribute="bottom" constant="31" id="Wgd-jA-NHF"/>
-                            <constraint firstItem="E8F-f0-m7F" firstAttribute="leading" secondItem="lQW-fF-vGd" secondAttribute="leading" id="aBc-eK-f8c"/>
-                            <constraint firstItem="lQW-fF-vGd" firstAttribute="trailing" secondItem="hIo-r7-rrW" secondAttribute="trailing" id="bq6-1b-7og"/>
-                            <constraint firstItem="hIo-r7-rrW" firstAttribute="top" secondItem="lQW-fF-vGd" secondAttribute="bottom" constant="26" id="fhy-bQ-p7c"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hIo-r7-rrW" secondAttribute="bottom" constant="227" id="vDr-uC-0f3"/>
-                            <constraint firstItem="lQW-fF-vGd" firstAttribute="leading" secondItem="hIo-r7-rrW" secondAttribute="leading" id="zTv-yj-DV6"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <outlet property="textField" destination="E8F-f0-m7F" id="PAU-F4-UNd"/>
-                        <outlet property="textView" destination="hIo-r7-rrW" id="zMa-O7-48A"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="758" y="797"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="3fq-Cf-nDs">
-            <objects>
-                <viewController storyboardIdentifier="BlueVC" id="0yj-Kf-qC6" customClass="NotificationController" customModule="Collab" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Epm-AW-w4P">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuJ-gy-7oh">
-                                <rect key="frame" x="16" y="225" width="343" height="147"/>
-                                <color key="backgroundColor" red="0.66087008248730972" green="0.66087008248730972" blue="0.66087008248730972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Get Notified">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0187217119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="getNotified:" destination="0yj-Kf-qC6" eventType="touchUpInside" id="gqH-fe-til"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.29411764709999999" green="0.46274509800000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="edf-gf-cRz" firstAttribute="bottom" secondItem="xuJ-gy-7oh" secondAttribute="bottom" constant="295" id="BfR-Hq-zZp"/>
-                            <constraint firstItem="xuJ-gy-7oh" firstAttribute="leading" secondItem="Epm-AW-w4P" secondAttribute="leadingMargin" id="Ryj-Yf-rOe"/>
-                            <constraint firstItem="xuJ-gy-7oh" firstAttribute="trailing" secondItem="Epm-AW-w4P" secondAttribute="trailingMargin" id="Y1m-ou-BYf"/>
-                            <constraint firstItem="xuJ-gy-7oh" firstAttribute="top" secondItem="edf-gf-cRz" secondAttribute="top" constant="205" id="hQy-qf-Ndz"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="edf-gf-cRz"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ezz-kh-yNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1405.5999999999999" y="796.55172413793105"/>
-        </scene>
         <!--VCAdd entry-->
         <scene sceneID="fyk-We-kRa">
             <objects>
@@ -160,7 +71,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add another entry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OT-hF-Puv">
                                 <rect key="frame" x="71" y="37" width="233" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -172,7 +83,7 @@
                                 </constraints>
                                 <state key="normal" title="Clear Data"/>
                                 <connections>
-                                    <action selector="clearData:" destination="uIi-Xv-djc" eventType="touchUpInside" id="P3R-IP-5Az"/>
+                                    <action selector="btnClearData:" destination="uIi-Xv-djc" eventType="touchUpInside" id="TBO-KP-FGE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -205,15 +116,15 @@
         <!--vcFeeding-->
         <scene sceneID="av5-um-2P1">
             <objects>
-                <viewController id="Skw-eP-gpn" userLabel="vcFeeding" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Feeding" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Skw-eP-gpn" userLabel="vcFeeding" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="06R-qZ-iuI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Feeding Entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioi-qX-keu">
-                                <rect key="frame" x="123" y="20" width="141" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Feeding Entry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioi-qX-keu">
+                                <rect key="frame" x="66" y="33" width="243" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
