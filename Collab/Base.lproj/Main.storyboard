@@ -171,6 +171,9 @@
                                     <constraint firstAttribute="height" constant="54" id="StA-fB-ceL"/>
                                 </constraints>
                                 <state key="normal" title="Clear Data"/>
+                                <connections>
+                                    <action selector="clearData:" destination="uIi-Xv-djc" eventType="touchUpInside" id="P3R-IP-5Az"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

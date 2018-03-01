@@ -10,6 +10,10 @@ import UIKit
 
 class AddEntryViewController: UIViewController {
     
+    @IBAction func clearData(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "FavoriteColor")
+    }
+    
     @IBAction func btnFeeding(_ sender: Any) {
         
     }
