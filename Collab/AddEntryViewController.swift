@@ -9,7 +9,22 @@
 import UIKit
 
 class AddEntryViewController: UIViewController {
-
+    
+    @IBAction func btnFeeding(_ sender: Any) {
+        
+    }
+    @IBAction func btnDiaper(_ sender: Any) {
+        
+    }
+    @IBAction func btnSleeping(_ sender: Any) {
+        
+    }
+    @IBAction func btnPumping(_ sender: Any) {
+        
+    }
+    @IBAction func Other(_ sender: Any) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,10 +37,14 @@ class AddEntryViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "DataEntry")
-        self.present(dataEntryViewController, animated: true, completion: nil)
-    } 
+        guard let x = UserDefaults.standard.object(forKey: "FavoriteColor") else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "DataEntry")
+            self.present(dataEntryViewController, animated: true, completion: nil)
+            return
+        }
+        
+    }
 
     /*
     // MARK: - Navigation
