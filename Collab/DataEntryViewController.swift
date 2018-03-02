@@ -9,18 +9,21 @@
 import UIKit
 
 class DataEntryViewController: UIViewController {
-    @IBOutlet weak var output: UILabel!
-    @IBOutlet weak var input: UITextField!
+    
+    @IBOutlet weak var firstNameInput: UITextField!
+    @IBOutlet weak var lastNameInput: UITextField!
     
     @IBAction func submitData(_ sender: Any) {
-        UserDefaults.standard.set(input.text, forKey: "FavoriteColor")
-        input.text = ""
+        UserDefaults.standard.set(firstNameInput.text, forKey: "First Name")
+        UserDefaults.standard.set(lastNameInput.text, forKey: "Last Name")
         self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        firstNameInput.delegate = self
+        lastNameInput.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -30,7 +33,8 @@ class DataEntryViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        input.resignFirstResponder()
+        firstNameInput.resignFirstResponder()
+        lastNameInput.resignFirstResponder()
     }
 
     /*

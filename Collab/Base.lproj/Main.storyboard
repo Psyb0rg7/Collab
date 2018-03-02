@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brazilia.otf">
+            <string>Brazilia</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--VCAdd entry-->
         <scene sceneID="fyk-We-kRa">
@@ -157,72 +162,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NdN-JO-V0g">
-                                <rect key="frame" x="72" y="49" width="230" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="83V-rz-QWi"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NdN-JO-V0g">
+                                <rect key="frame" x="16" y="68" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Brazilia" family="Brazilia" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gom-1W-kaJ">
-                                <rect key="frame" x="72" y="20" width="230" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.37611607142857145" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAx-s3-UUI">
+                                <rect key="frame" x="16" y="187" width="343" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Brazilia" family="Brazilia" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWa-Vq-rHZ">
+                                <rect key="frame" x="16" y="139" width="343" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Brazilia" family="Brazilia" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1U-eK-eYs">
-                                <rect key="frame" x="117" y="105" width="140" height="30"/>
+                                <rect key="frame" x="0.0" y="600" width="375" height="67"/>
+                                <color key="backgroundColor" red="0.94501506979695427" green="0.35604750338343327" blue="0.19915952394599362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="1at-e0-Ug0"/>
+                                    <constraint firstAttribute="height" constant="67" id="ygg-tt-6Da"/>
                                 </constraints>
-                                <state key="normal" title="Submit Data"/>
+                                <fontDescription key="fontDescription" name="Brazilia" family="Brazilia" pointSize="38"/>
+                                <state key="normal" title="Submit Data">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="submitData:" destination="1xB-hk-hca" eventType="touchUpInside" id="kNh-J2-dat"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoe-zI-3Yw">
-                                <rect key="frame" x="117" y="193" width="140" height="30"/>
-                                <state key="normal" title="Clear Data"/>
-                                <connections>
-                                    <action selector="clearData:" destination="1xB-hk-hca" eventType="touchUpInside" id="Uxe-A1-GLr"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gom-1W-kaJ">
+                                <rect key="frame" x="16" y="20" width="343" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Brazilia" family="Brazilia" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.41519722814569182" green="0.88822572969543145" blue="0.075382047183835982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gom-1W-kaJ" firstAttribute="centerX" secondItem="hLT-Fl-Yaa" secondAttribute="centerX" id="0PZ-Gi-dPT"/>
-                            <constraint firstItem="NdN-JO-V0g" firstAttribute="top" secondItem="gom-1W-kaJ" secondAttribute="bottom" constant="8" symbolic="YES" id="1s2-Jg-p1C"/>
-                            <constraint firstItem="gom-1W-kaJ" firstAttribute="leading" secondItem="l5e-yg-Pwl" secondAttribute="leading" constant="72" id="3pk-J2-FfM"/>
-                            <constraint firstItem="gom-1W-kaJ" firstAttribute="top" secondItem="l5e-yg-Pwl" secondAttribute="top" id="ILe-QR-E8h"/>
-                            <constraint firstItem="c1U-eK-eYs" firstAttribute="leading" secondItem="l5e-yg-Pwl" secondAttribute="leading" constant="117" id="N1D-ZI-TjU"/>
-                            <constraint firstItem="uoe-zI-3Yw" firstAttribute="top" secondItem="c1U-eK-eYs" secondAttribute="bottom" constant="58" id="NRC-Ew-Sd2"/>
-                            <constraint firstItem="uoe-zI-3Yw" firstAttribute="leading" secondItem="c1U-eK-eYs" secondAttribute="leading" id="WEo-By-WAv"/>
-                            <constraint firstItem="uoe-zI-3Yw" firstAttribute="trailing" secondItem="c1U-eK-eYs" secondAttribute="trailing" id="cDI-1S-wlB"/>
-                            <constraint firstItem="c1U-eK-eYs" firstAttribute="top" secondItem="NdN-JO-V0g" secondAttribute="bottom" constant="26" id="h89-j6-qcC"/>
-                            <constraint firstItem="NdN-JO-V0g" firstAttribute="centerX" secondItem="c1U-eK-eYs" secondAttribute="centerX" id="jGl-Ix-XCy"/>
-                            <constraint firstItem="gom-1W-kaJ" firstAttribute="leading" secondItem="NdN-JO-V0g" secondAttribute="leading" id="nY7-TL-bGk"/>
-                            <constraint firstItem="gom-1W-kaJ" firstAttribute="trailing" secondItem="NdN-JO-V0g" secondAttribute="trailing" id="piw-hT-Bvb"/>
+                            <constraint firstItem="c1U-eK-eYs" firstAttribute="bottom" secondItem="l5e-yg-Pwl" secondAttribute="bottom" id="3mz-yB-aff"/>
+                            <constraint firstItem="c1U-eK-eYs" firstAttribute="leading" secondItem="l5e-yg-Pwl" secondAttribute="leading" id="U7r-YX-rLf"/>
+                            <constraint firstItem="c1U-eK-eYs" firstAttribute="trailing" secondItem="l5e-yg-Pwl" secondAttribute="trailing" id="jUP-vd-06K"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l5e-yg-Pwl"/>
                     </view>
                     <connections>
-                        <outlet property="input" destination="NdN-JO-V0g" id="OgT-Cc-CnU"/>
-                        <outlet property="output" destination="gom-1W-kaJ" id="zBk-En-LDj"/>
+                        <outlet property="firstNameInput" destination="NdN-JO-V0g" id="v2J-Ph-2C9"/>
+                        <outlet property="lastNameInput" destination="NAx-s3-UUI" id="P8H-o4-GHc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpe-8Q-KIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.199999999999999" y="-528.48575712143929"/>
-        </scene>
-        <!--Root-->
-        <scene sceneID="Y3r-UQ-Tes">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Mgr-lj-uXr" customClass="Root" customModule="Collab" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NzV-Mb-6pn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="759" y="134"/>
         </scene>
     </scenes>
 </document>

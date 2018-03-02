@@ -9,9 +9,12 @@
 import UIKit
 
 class AddEntryViewController: UIViewController {
+    let data = ["First Name", "Last Name"]
     
     @IBAction func btnClearData(_ sender: Any) {
-        UserDefaults.standard.removeObject(forKey: "FavoriteColor")
+        for d in data {
+            UserDefaults.standard.removeObject(forKey: d)
+        }
     }
     
     @IBAction func btnFeeding(_ sender: Any) {
@@ -43,7 +46,14 @@ class AddEntryViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if UserDefaults.standard.object(forKey: "FavoriteColor") == nil {
+        var dataIn = true
+        for d in data {
+            if UserDefaults.standard.object(forKey: d) == nil {
+                dataIn = false
+                break
+            }
+        }
+        if !dataIn {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "DataEntry")
             self.present(dataEntryViewController, animated: true, completion: nil)
