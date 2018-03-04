@@ -9,8 +9,8 @@
 import UIKit
 
 class AddEntryViewController: UIViewController {
-    let data = ["First Name", "Last Name"]
     
+    let data = ["First Name", "Last Name"]
     @IBAction func btnClearData(_ sender: Any) {
         for d in data {
             UserDefaults.standard.removeObject(forKey: d)
@@ -45,21 +45,7 @@ class AddEntryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        var dataIn = true
-        for d in data {
-            if UserDefaults.standard.object(forKey: d) == nil {
-                dataIn = false
-                break
-            }
-        }
-        if !dataIn {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "DataEntry")
-            self.present(dataEntryViewController, animated: true, completion: nil)
-        }
-        
-    }
+    
 
     /*
     // MARK: - Navigation

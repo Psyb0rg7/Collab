@@ -9,8 +9,11 @@
 import UIKit
 
 class MenuController: UIViewController {
-
+    let data = ["First Name", "Last Name"]
     @IBAction func btnAddEntry(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainMenu = storyboard.instantiateViewController(withIdentifier: "AddEntry")
+        self.present(mainMenu, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +25,21 @@ class MenuController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        var dataIn = true
+        for d in data {
+            if UserDefaults.standard.object(forKey: d) == nil {
+                dataIn = false
+                break
+            }
+        }
+        if !dataIn {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "DataEntry")
+            self.present(dataEntryViewController, animated: true, completion: nil)
+        }
+        
+    }
 
     /*
     // MARK: - Navigation
