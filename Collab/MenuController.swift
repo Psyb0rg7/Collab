@@ -11,15 +11,21 @@ import UIKit
 class MenuController: UIViewController {
     let data = ["First Name", "Last Name"]
     @IBAction func btnAddEntry(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainMenu = storyboard.instantiateViewController(withIdentifier: "AddEntry")
-        self.present(mainMenu, animated: true, completion: nil)
+        if Child.loadChildData().count == 0 {
+            errorLabel!.isHidden = false
+        } else {
+            let storyboard = UIStoryboard(name: "Main",   bundle: nil)
+            let mainMenu = storyboard.instantiateViewController(withIdentifier: "AddEntry")
+            self.present(mainMenu, animated: true, completion: nil)
+        }
+        
     }
     @IBAction func btnAddChild(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let addchild = storyboard.instantiateViewController(withIdentifier: "AddChild")
         self.present(addchild, animated: true, completion: nil)
     }
+    @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +37,9 @@ class MenuController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func viewDidAppear(_ animated: Bool) {
+        if Child.loadChildData().count > 0 {
+            errorLabel!.isHidden = true
+        }
         var dataIn = true
         for d in data {
             if UserDefaults.standard.object(forKey: d) == nil {
@@ -43,7 +52,7 @@ class MenuController: UIViewController {
             let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "DataEntry")
             self.present(dataEntryViewController, animated: true, completion: nil)
         }
-        
+        self.errorLabel!.isHidden = true
     }
 
     /*

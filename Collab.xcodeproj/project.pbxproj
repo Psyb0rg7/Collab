@@ -34,6 +34,7 @@
 		3559948020477F79008367D3 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559947F20477F79008367D3 /* AddEntryViewController.swift */; };
 		35730D8A2061D532005384FF /* InputFeedingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35730D892061D532005384FF /* InputFeedingViewController.swift */; };
 		3574635E207250710026F96A /* BabyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574635D207250710026F96A /* BabyEntry.swift */; };
+		35746360207258A60026F96A /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574635F207258A60026F96A /* Child.swift */; };
 		35AAD0232044ED71008F11DB /* DataEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD0222044ED71008F11DB /* DataEntryViewController.swift */; };
 		35E4AA402061E53200BEB0D5 /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E4AA3F2061E53200BEB0D5 /* AddChildViewController.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		3559947F20477F79008367D3 /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
 		35730D892061D532005384FF /* InputFeedingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFeedingViewController.swift; sourceTree = "<group>"; };
 		3574635D207250710026F96A /* BabyEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyEntry.swift; sourceTree = "<group>"; };
+		3574635F207258A60026F96A /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 		35AAD0222044ED71008F11DB /* DataEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryViewController.swift; sourceTree = "<group>"; };
 		35E4AA3F2061E53200BEB0D5 /* AddChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				35730D892061D532005384FF /* InputFeedingViewController.swift */,
 				35E4AA3F2061E53200BEB0D5 /* AddChildViewController.swift */,
 				3574635D207250710026F96A /* BabyEntry.swift */,
+				3574635F207258A60026F96A /* Child.swift */,
 			);
 			path = Collab;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				3500215D204CA9A100054827 /* MenuController.swift in Sources */,
 				35E4AA402061E53200BEB0D5 /* AddChildViewController.swift in Sources */,
+				35746360207258A60026F96A /* Child.swift in Sources */,
 				35AAD0232044ED71008F11DB /* DataEntryViewController.swift in Sources */,
 				3574635E207250710026F96A /* BabyEntry.swift in Sources */,
 				0A19A08A202A81C100F6730F /* AppDelegate.swift in Sources */,
