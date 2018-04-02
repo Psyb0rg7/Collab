@@ -15,6 +15,11 @@ class MenuController: UIViewController {
         let mainMenu = storyboard.instantiateViewController(withIdentifier: "AddEntry")
         self.present(mainMenu, animated: true, completion: nil)
     }
+    @IBAction func btnAddChild(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let addchild = storyboard.instantiateViewController(withIdentifier: "AddChild")
+        self.present(addchild, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

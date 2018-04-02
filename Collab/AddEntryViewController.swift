@@ -22,6 +22,9 @@ class AddEntryViewController: UIViewController {
         let feedingViewController = storyboard.instantiateViewController(withIdentifier: "Feeding")
         self.present(feedingViewController, animated: true, completion: nil)
     }
+    @IBAction func btnCancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func btnDiaper(_ sender: Any) {
         
     }
