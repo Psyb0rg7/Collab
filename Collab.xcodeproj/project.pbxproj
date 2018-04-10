@@ -32,7 +32,7 @@
 		0A2CF9AE204CA6AD005756BF /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CF99B204CA6AD005756BF /* Montserrat-ExtraBoldItalic.ttf */; };
 		3500215D204CA9A100054827 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3500215C204CA9A100054827 /* MenuController.swift */; };
 		3559948020477F79008367D3 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559947F20477F79008367D3 /* AddEntryViewController.swift */; };
-		35AAD0232044ED71008F11DB /* DataEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD0222044ED71008F11DB /* DataEntryViewController.swift */; };
+		35AAD0232044ED71008F11DB /* NameEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD0222044ED71008F11DB /* NameEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +63,7 @@
 		0A2CF99B204CA6AD005756BF /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		3500215C204CA9A100054827 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		3559947F20477F79008367D3 /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
-		35AAD0222044ED71008F11DB /* DataEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryViewController.swift; sourceTree = "<group>"; };
+		35AAD0222044ED71008F11DB /* NameEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				0A19A090202A81C100F6730F /* Assets.xcassets */,
 				0A19A092202A81C100F6730F /* LaunchScreen.storyboard */,
 				0A19A095202A81C100F6730F /* Info.plist */,
-				35AAD0222044ED71008F11DB /* DataEntryViewController.swift */,
+				35AAD0222044ED71008F11DB /* NameEntryViewController.swift */,
 				3559947F20477F79008367D3 /* AddEntryViewController.swift */,
 				3500215C204CA9A100054827 /* MenuController.swift */,
 			);
@@ -227,7 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3500215D204CA9A100054827 /* MenuController.swift in Sources */,
-				35AAD0232044ED71008F11DB /* DataEntryViewController.swift in Sources */,
+				35AAD0232044ED71008F11DB /* NameEntryViewController.swift in Sources */,
 				0A19A08A202A81C100F6730F /* AppDelegate.swift in Sources */,
 				3559948020477F79008367D3 /* AddEntryViewController.swift in Sources */,
 			);
