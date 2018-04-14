@@ -35,7 +35,7 @@ class MenuController: UIViewController {
         }
         if !dataIn {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "NameEntry")
+            let dataEntryViewController = storyboard.instantiateViewController(withIdentifier: "PrimaryCaregiver")
             self.present(dataEntryViewController, animated: true, completion: nil)
         }
         

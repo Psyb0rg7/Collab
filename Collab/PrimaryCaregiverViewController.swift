@@ -1,5 +1,5 @@
 //
-//  NameEntryViewController.swift
+//  PrimaryCaregiverViewController.swift
 //  Collab
 //
 //  Created by Fredrik Fatemi on 2/26/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NameEntryViewController: UIViewController {
+class PrimaryCaregiverViewController: UIViewController {
     @IBOutlet weak var missingDataLabel: UILabel!
     
     @IBOutlet weak var firstNameLabel: UILabel!
@@ -47,7 +47,6 @@ class NameEntryViewController: UIViewController {
     }
     
     @IBAction func submitData(_ sender: Any) {
-        print("Hello")
         var missingData = false
         for textField in textFieldList {
             let label = getLabelFromTextField(textField: textField)
@@ -73,6 +72,9 @@ class NameEntryViewController: UIViewController {
     }
     
     @IBAction func addCaregiver(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainMenu = storyboard.instantiateViewController(withIdentifier: "NewCaregiver")
+        self.present(mainMenu, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -109,7 +111,7 @@ class NameEntryViewController: UIViewController {
 
 }
 
-extension NameEntryViewController: UITextFieldDelegate {
+extension PrimaryCaregiverViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

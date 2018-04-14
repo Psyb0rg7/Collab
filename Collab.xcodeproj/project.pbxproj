@@ -30,9 +30,10 @@
 		0A2CF9AC204CA6AD005756BF /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CF999204CA6AD005756BF /* Montserrat-Italic.ttf */; };
 		0A2CF9AD204CA6AD005756BF /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CF99A204CA6AD005756BF /* Montserrat-SemiBoldItalic.ttf */; };
 		0A2CF9AE204CA6AD005756BF /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CF99B204CA6AD005756BF /* Montserrat-ExtraBoldItalic.ttf */; };
+		0A8EB6E5207C4207003427BA /* NewCaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EB6E4207C4207003427BA /* NewCaregiverViewController.swift */; };
 		3500215D204CA9A100054827 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3500215C204CA9A100054827 /* MenuController.swift */; };
 		3559948020477F79008367D3 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559947F20477F79008367D3 /* AddEntryViewController.swift */; };
-		35AAD0232044ED71008F11DB /* NameEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD0222044ED71008F11DB /* NameEntryViewController.swift */; };
+		35AAD0232044ED71008F11DB /* PrimaryCaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD0222044ED71008F11DB /* PrimaryCaregiverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,9 +62,10 @@
 		0A2CF999204CA6AD005756BF /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		0A2CF99A204CA6AD005756BF /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		0A2CF99B204CA6AD005756BF /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		0A8EB6E4207C4207003427BA /* NewCaregiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCaregiverViewController.swift; sourceTree = "<group>"; };
 		3500215C204CA9A100054827 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		3559947F20477F79008367D3 /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
-		35AAD0222044ED71008F11DB /* NameEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameEntryViewController.swift; sourceTree = "<group>"; };
+		35AAD0222044ED71008F11DB /* PrimaryCaregiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCaregiverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,13 +98,14 @@
 		0A19A088202A81C100F6730F /* Collab */ = {
 			isa = PBXGroup;
 			children = (
-				0A19A089202A81C100F6730F /* AppDelegate.swift */,
+				35AAD0222044ED71008F11DB /* PrimaryCaregiverViewController.swift */,
+				0A8EB6E4207C4207003427BA /* NewCaregiverViewController.swift */,
 				0A19A08D202A81C100F6730F /* Main.storyboard */,
+				0A19A089202A81C100F6730F /* AppDelegate.swift */,
 				0A2CF988204CA6AD005756BF /* Montserrat */,
 				0A19A090202A81C100F6730F /* Assets.xcassets */,
 				0A19A092202A81C100F6730F /* LaunchScreen.storyboard */,
 				0A19A095202A81C100F6730F /* Info.plist */,
-				35AAD0222044ED71008F11DB /* NameEntryViewController.swift */,
 				3559947F20477F79008367D3 /* AddEntryViewController.swift */,
 				3500215C204CA9A100054827 /* MenuController.swift */,
 			);
@@ -227,7 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3500215D204CA9A100054827 /* MenuController.swift in Sources */,
-				35AAD0232044ED71008F11DB /* NameEntryViewController.swift in Sources */,
+				0A8EB6E5207C4207003427BA /* NewCaregiverViewController.swift in Sources */,
+				35AAD0232044ED71008F11DB /* PrimaryCaregiverViewController.swift in Sources */,
 				0A19A08A202A81C100F6730F /* AppDelegate.swift in Sources */,
 				3559948020477F79008367D3 /* AddEntryViewController.swift in Sources */,
 			);
