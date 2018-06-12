@@ -35,6 +35,12 @@
 		3500215D204CA9A100054827 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3500215C204CA9A100054827 /* MenuController.swift */; };
 		3559948020477F79008367D3 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559947F20477F79008367D3 /* AddEntryViewController.swift */; };
 		35AAD0232044ED71008F11DB /* PrimaryCaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD0222044ED71008F11DB /* PrimaryCaregiverViewController.swift */; };
+		35CDF47720D05F8600071E6E /* AddEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF47620D05F8600071E6E /* AddEntry.swift */; };
+		35CDF47920D05F9C00071E6E /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF47820D05F9C00071E6E /* AddChildViewController.swift */; };
+		35CDF47B20D05FA700071E6E /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF47A20D05FA700071E6E /* MenuController.swift */; };
+		35CDF47D20D05FB400071E6E /* AddChild.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF47C20D05FB400071E6E /* AddChild.storyboard */; };
+		35CDF47F20D05FBC00071E6E /* BabyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF47E20D05FBC00071E6E /* BabyEntry.swift */; };
+		35CDF48120D05FC100071E6E /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF48020D05FC100071E6E /* Child.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +74,12 @@
 		3500215C204CA9A100054827 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		3559947F20477F79008367D3 /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
 		35AAD0222044ED71008F11DB /* PrimaryCaregiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCaregiverViewController.swift; sourceTree = "<group>"; };
+		35CDF47620D05F8600071E6E /* AddEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntry.swift; sourceTree = "<group>"; };
+		35CDF47820D05F9C00071E6E /* AddChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddChildViewController.swift; sourceTree = "<group>"; };
+		35CDF47A20D05FA700071E6E /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = ../../../../Desktop/MergeTmp/MenuController.swift; sourceTree = "<group>"; };
+		35CDF47C20D05FB400071E6E /* AddChild.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddChild.storyboard; sourceTree = "<group>"; };
+		35CDF47E20D05FBC00071E6E /* BabyEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabyEntry.swift; sourceTree = "<group>"; };
+		35CDF48020D05FC100071E6E /* Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,12 @@
 		0A19A088202A81C100F6730F /* Collab */ = {
 			isa = PBXGroup;
 			children = (
+				35CDF48020D05FC100071E6E /* Child.swift */,
+				35CDF47E20D05FBC00071E6E /* BabyEntry.swift */,
+				35CDF47C20D05FB400071E6E /* AddChild.storyboard */,
+				35CDF47A20D05FA700071E6E /* MenuController.swift */,
+				35CDF47820D05F9C00071E6E /* AddChildViewController.swift */,
+				35CDF47620D05F8600071E6E /* AddEntry.swift */,
 				0A19A08D202A81C100F6730F /* Main.storyboard */,
 				35AAD0222044ED71008F11DB /* PrimaryCaregiverViewController.swift */,
 				0A8EB6E4207C4207003427BA /* NewCaregiverViewController.swift */,
@@ -215,6 +233,7 @@
 				0A2CF9A9204CA6AD005756BF /* OFL.txt in Resources */,
 				0A2CF99C204CA6AD005756BF /* Montserrat-LightItalic.ttf in Resources */,
 				0A2CF9AC204CA6AD005756BF /* Montserrat-Italic.ttf in Resources */,
+				35CDF47D20D05FB400071E6E /* AddChild.storyboard in Resources */,
 				0A2CF9A1204CA6AD005756BF /* Montserrat-ExtraLight.ttf in Resources */,
 				0A2CF99D204CA6AD005756BF /* Montserrat-Medium.ttf in Resources */,
 				0A19A091202A81C100F6730F /* Assets.xcassets in Resources */,
@@ -233,11 +252,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35CDF47B20D05FA700071E6E /* MenuController.swift in Sources */,
 				3500215D204CA9A100054827 /* MenuController.swift in Sources */,
 				0A8EB6E5207C4207003427BA /* NewCaregiverViewController.swift in Sources */,
 				35AAD0232044ED71008F11DB /* PrimaryCaregiverViewController.swift in Sources */,
 				0A19A08A202A81C100F6730F /* AppDelegate.swift in Sources */,
+				35CDF47720D05F8600071E6E /* AddEntry.swift in Sources */,
+				35CDF47F20D05FBC00071E6E /* BabyEntry.swift in Sources */,
 				3559948020477F79008367D3 /* AddEntryViewController.swift in Sources */,
+				35CDF48120D05FC100071E6E /* Child.swift in Sources */,
+				35CDF47920D05F9C00071E6E /* AddChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
