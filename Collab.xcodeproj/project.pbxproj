@@ -31,6 +31,7 @@
 		0A2CF9AD204CA6AD005756BF /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CF99A204CA6AD005756BF /* Montserrat-SemiBoldItalic.ttf */; };
 		0A2CF9AE204CA6AD005756BF /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CF99B204CA6AD005756BF /* Montserrat-ExtraBoldItalic.ttf */; };
 		0A8EB6E5207C4207003427BA /* NewCaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EB6E4207C4207003427BA /* NewCaregiverViewController.swift */; };
+		0AA094DD20D05EF60085450B /* Caregiver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA094DB20D05EF60085450B /* Caregiver.storyboard */; };
 		3500215D204CA9A100054827 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3500215C204CA9A100054827 /* MenuController.swift */; };
 		3559948020477F79008367D3 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559947F20477F79008367D3 /* AddEntryViewController.swift */; };
 		35AAD0232044ED71008F11DB /* PrimaryCaregiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD0222044ED71008F11DB /* PrimaryCaregiverViewController.swift */; };
@@ -63,6 +64,7 @@
 		0A2CF99A204CA6AD005756BF /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		0A2CF99B204CA6AD005756BF /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		0A8EB6E4207C4207003427BA /* NewCaregiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCaregiverViewController.swift; sourceTree = "<group>"; };
+		0AA094DC20D05EF60085450B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Collab/Base.lproj/Caregiver.storyboard; sourceTree = "<group>"; };
 		3500215C204CA9A100054827 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		3559947F20477F79008367D3 /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
 		35AAD0222044ED71008F11DB /* PrimaryCaregiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCaregiverViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		0A19A07D202A81C100F6730F = {
 			isa = PBXGroup;
 			children = (
+				0AA094DB20D05EF60085450B /* Caregiver.storyboard */,
 				0A19A088202A81C100F6730F /* Collab */,
 				0A19A087202A81C100F6730F /* Products */,
 			);
@@ -98,9 +101,9 @@
 		0A19A088202A81C100F6730F /* Collab */ = {
 			isa = PBXGroup;
 			children = (
+				0A19A08D202A81C100F6730F /* Main.storyboard */,
 				35AAD0222044ED71008F11DB /* PrimaryCaregiverViewController.swift */,
 				0A8EB6E4207C4207003427BA /* NewCaregiverViewController.swift */,
-				0A19A08D202A81C100F6730F /* Main.storyboard */,
 				0A19A089202A81C100F6730F /* AppDelegate.swift */,
 				0A2CF988204CA6AD005756BF /* Montserrat */,
 				0A19A090202A81C100F6730F /* Assets.xcassets */,
@@ -199,6 +202,7 @@
 			files = (
 				0A2CF99E204CA6AD005756BF /* Montserrat-BoldItalic.ttf in Resources */,
 				0A2CF9AA204CA6AD005756BF /* Montserrat-Black.ttf in Resources */,
+				0AA094DD20D05EF60085450B /* Caregiver.storyboard in Resources */,
 				0A19A094202A81C100F6730F /* LaunchScreen.storyboard in Resources */,
 				0A2CF9A4204CA6AD005756BF /* Montserrat-MediumItalic.ttf in Resources */,
 				0A2CF9A5204CA6AD005756BF /* Montserrat-BlackItalic.ttf in Resources */,
@@ -254,6 +258,14 @@
 				0A19A093202A81C100F6730F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0AA094DB20D05EF60085450B /* Caregiver.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AA094DC20D05EF60085450B /* Base */,
+			);
+			name = Caregiver.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
