@@ -22,7 +22,7 @@ class Child: NSObject {
     }
     static func addChild(child: Child) {
         var childArray = loadChildData()
-        String childEncoded = child.firstName.append(";").append(child.lastName).append(";")
+        var childEncoded = child.firstName.append(";").append(child.lastName).append(";")
         childArray.append(child)
         let childData = NSKeyedArchiver.archivedData(withRootObject: childArray)
         UserDefaults.standard.set(childData, forKey: "children")
