@@ -12,6 +12,8 @@ class Child: NSObject {
     var babyDate = Date()
     var firstName = ""
     var lastName = ""
+    
+    
     init(firstName: String, lastName: String, babyDate: Date) {
         super.init()
         self.firstName = firstName
@@ -20,6 +22,7 @@ class Child: NSObject {
     }
     static func addChild(child: Child) {
         var childArray = loadChildData()
+        String childEncoded = child.firstName.append(";").append(child.lastName).append(";")
         childArray.append(child)
         let childData = NSKeyedArchiver.archivedData(withRootObject: childArray)
         UserDefaults.standard.set(childData, forKey: "children")

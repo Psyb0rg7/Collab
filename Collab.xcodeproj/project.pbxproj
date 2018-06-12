@@ -36,6 +36,7 @@
 		3574635E207250710026F96A /* BabyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574635D207250710026F96A /* BabyEntry.swift */; };
 		35746360207258A60026F96A /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574635F207258A60026F96A /* Child.swift */; };
 		35AAD0232044ED71008F11DB /* DataEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD0222044ED71008F11DB /* DataEntryViewController.swift */; };
+		35CDF47520D05D7100071E6E /* AddChild.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF47320D05D7100071E6E /* AddChild.storyboard */; };
 		35E4AA402061E53200BEB0D5 /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E4AA3F2061E53200BEB0D5 /* AddChildViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		3574635D207250710026F96A /* BabyEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyEntry.swift; sourceTree = "<group>"; };
 		3574635F207258A60026F96A /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 		35AAD0222044ED71008F11DB /* DataEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryViewController.swift; sourceTree = "<group>"; };
+		35CDF47420D05D7100071E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Collab/Base.lproj/AddChild.storyboard; sourceTree = "<group>"; };
 		35E4AA3F2061E53200BEB0D5 /* AddChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		0A19A088202A81C100F6730F /* Collab */ = {
 			isa = PBXGroup;
 			children = (
+				35CDF47320D05D7100071E6E /* AddChild.storyboard */,
 				0A19A089202A81C100F6730F /* AppDelegate.swift */,
 				0A19A08D202A81C100F6730F /* Main.storyboard */,
 				0A2CF988204CA6AD005756BF /* Montserrat */,
@@ -211,6 +214,7 @@
 				0A19A094202A81C100F6730F /* LaunchScreen.storyboard in Resources */,
 				0A2CF9A4204CA6AD005756BF /* Montserrat-MediumItalic.ttf in Resources */,
 				0A2CF9A5204CA6AD005756BF /* Montserrat-BlackItalic.ttf in Resources */,
+				35CDF47520D05D7100071E6E /* AddChild.storyboard in Resources */,
 				0A2CF99F204CA6AD005756BF /* Montserrat-Light.ttf in Resources */,
 				0A2CF9A3204CA6AD005756BF /* Montserrat-Bold.ttf in Resources */,
 				0A2CF9A8204CA6AD005756BF /* Montserrat-ExtraBold.ttf in Resources */,
@@ -266,6 +270,14 @@
 				0A19A093202A81C100F6730F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		35CDF47320D05D7100071E6E /* AddChild.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35CDF47420D05D7100071E6E /* Base */,
+			);
+			name = AddChild.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
